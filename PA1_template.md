@@ -1,5 +1,7 @@
 # Reproducible Research: Peer Assessment 1
 
+#
+
 
 ## Loading and preprocessing the data
 
@@ -19,26 +21,7 @@ data <- transform(data,date=as.Date(date),steps=as.numeric(steps))
 
 #Load the dplyr package for manipulating data
 library(dplyr)
-```
 
-```
-## 
-## Attaching package: 'dplyr'
-```
-
-```
-## The following objects are masked from 'package:stats':
-## 
-##     filter, lag
-```
-
-```
-## The following objects are masked from 'package:base':
-## 
-##     intersect, setdiff, setequal, union
-```
-
-```r
 #Convert the data frame to data.table
 data <- tbl_df(data)
 ```
